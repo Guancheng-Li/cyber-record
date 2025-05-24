@@ -19,6 +19,9 @@
 3. 可选项：使用protoc（本地安装过proto的compiler）编译仓库内的proto文件，生成pb2.py并替换仓库内对应文件：`protoc --python_out=. *.proto`
 
 # 更新日志:
+## 日期 2025.05.24，版本 0.0.2
+1. 更新获取`message_type`方法以适配新的protobuf版本；
+2. 修复`README.md`中更新日志的版本信息；
 ## 日期 2025.05.24，版本 0.0.1
 1. 基于cyber-record 0.1.12提取源码；
 2. 增加相应的`BUILD`文件用于编译；

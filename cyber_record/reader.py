@@ -251,7 +251,9 @@ class Reader:
                 descriptor = self.desc_pool.FindMessageTypeByName(
                     channel_cache.message_type
                 )
-                message_type = message_factory.MessageFactory().GetPrototype(descriptor)
+                # NOTE: For old protobuf versions, use the following code instead:
+                # message_type = message_factory.MessageFactory().GetPrototype(descriptor)
+                message_type = message_factory.GetMessageClass(descriptor)
                 self.message_type_pool.update({channel_name: message_type})
             else:
                 logging.warn("{} has no proto desc!".format(channel_name))

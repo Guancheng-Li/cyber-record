@@ -19,7 +19,10 @@ Based on cyber-record 0.1.12 and extracted from whl, you can use `pip install cy
 3. Install use protoc update pb2.py, and replace the one in repo: `protoc --python_out=. *.proto`;
 
 # Update log:
-## Date 2025.05.24，Version 0.1.12
+## Date 2025.05.24，Version 0.0.2
+1. Updated the method to get `message_type` to keep compatible with protobuf new versions;
+2. Fix the README.md version error in update log part;
+## Date 2025.05.24，Version 0.0.1
 1. Based on cyber-record 0.1.12 and extracted from whl;
 2. Added `BUILD` files for bazel;
 3. Added `proto` files from project Apollo to replace the `pb2.py` files (verified with libprotoc 28.3, generated `pb2.py` keep unchanged); 
